@@ -3,14 +3,14 @@
 <!-- ----- -->
 <md-content class="l-page-container md-padding">
     <div class="l-page-header">
-        <md-icon md-svg-src="../assets/images/ic_inbox_48px.svg" class="s48 header-icon"></md-icon>
+        <md-icon md-svg-src="assets/images/ic_inbox_48px.svg" class="s48 header-icon"></md-icon>
         <span>&nbsp;</span>
         <span class="md-headline">{{radicationCtrl.title}}</span>
     </div>
     <br/>
     <div layout="row" layout-sm="column" class="inbox-list--searchbox clearfix md-whiteframe-z3">
         <md-input-container md-no-float flex="55">
-            <md-icon md-svg-src="../assets/images/ic_search_black_48px.svg"   class="s48" aria-label="Assignment "></md-icon>
+            <md-icon md-svg-src="assets/images/ic_search_black_48px.svg"   class="s48" aria-label="Assignment "></md-icon>
             <input  type="search" placeholder="Buscar Documento" ng-model="radicationCtrl.inputFilter">
         </md-input-container>
         <div flex="45">
@@ -22,12 +22,12 @@
     <md-list>
         <br/>
         <md-list-item role="listitem" class="md-3-line" ng-repeat="document in radicationCtrl.documents | filter: radicationCtrl.inputFilter track by $index" >
-            <md-icon md-svg-src="../assets/images/ic_email_48px.svg"  class="s48 md-accent md-hue-2" aria-label="Assignment "></md-icon>
+            <md-icon md-svg-src="assets/images/ic_email_48px.svg"  class="s48 md-accent md-hue-2" aria-label="Assignment "></md-icon>
             <div class="md-list-item-text">
                 <span>
                     <a ng-click="radicationCtrl.goToDetailDocument()">{{document.name}}</a>
                     <a class="pull-right" ng-click="radicationCtrl.deleteDocument($event)">
-                        <md-icon md-svg-src="../assets/images/ic_delete_48px.svg" class="s48 md-warn"></md-icon>
+                        <md-icon md-svg-src="assets/images/ic_delete_48px.svg" class="s48 md-warn"></md-icon>
                     </a>
                 </span>
             </div>

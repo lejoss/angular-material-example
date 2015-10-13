@@ -26,7 +26,7 @@
         }
 
         function getInboxList() {
-            return Restangular.allUrl('messages', 'api/inbox.json').getList()
+            return Restangular.allUrl('messages', 'app/api/inbox.json').getList()
                 .then(function(messages) {
                     radicationCtrl.documents = messages;
                 })

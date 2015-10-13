@@ -13,7 +13,7 @@
             scope: {
                 section: '='
             },
-            templateUrl: '../views/menu-link.html',
+            templateUrl: 'views/menu-link.html',
             link: function ($scope, $element) {
                 var controller = $element.parent().controller();
 

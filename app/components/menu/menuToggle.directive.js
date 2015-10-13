@@ -13,7 +13,7 @@
             scope: {
                 section: '='
             },
-            templateUrl: '../views/menu-toggle.html',
+            templateUrl: 'views/menu-toggle.html',
             link: function (scope, element) {
                 var controller = element.parent().controller();
                 scope.isOpen = function () {

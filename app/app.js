@@ -18,7 +18,7 @@
             $stateProvider
                 .state("/app", {
                     url: '/',
-                    templateUrl: '../views/inbox-list.html',
+                    templateUrl: 'views/inbox-list.html',
                     controller: 'RadicationCtrl',
                     controllerAs: 'radicationCtrl'
                 });

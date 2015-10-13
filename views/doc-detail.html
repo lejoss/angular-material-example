@@ -1,0 +1,200 @@
+<!-- ----- -->
+<!-- document detail  -->
+<!-- ----- -->
+<md-content class="l-page-container md-padding dd--page-bgColor">
+    <div class="l-page-header">
+        <md-icon md-svg-src="../assets/images/ic_drafts_48px.svg" class="s48 header-icon"></md-icon>
+        <span>&nbsp;</span>
+        <span class="md-headline">Detalle del Documento</span>
+    </div>
+    <br/>
+    <br/>
+    <div layout-gt-sm="row" layout-sm="column">
+        <!-- Radication Number Card-->
+        <md-card class="dd--radicationNumber-card" layout-align="center center"  flex flex-sm="100">
+            <md-card-content>
+                <p class="md-headline">1246</p>
+            </md-card-content>
+        </md-card>
+
+        <md-card flex="35" flex-sm="100" layout-align="center center">
+            <md-card-content>
+                <h3>Procedencia</h3>
+                <p>Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.</p>
+            </md-card-content>
+        </md-card>
+
+        <md-card flex="30" flex-sm="100" layout-align="center center">
+            <md-card-content>
+                <h3>Destino</h3>
+                <p>Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Secondary line text Lorem ipsum dolor sit amet</p>
+            </md-card-content>
+        </md-card>
+        <!--
+        <div layout="column" flex layout-align="space-arounds">
+            <md-card>
+                <md-card-content layout-align="">
+                    <span>Emision:  12/06/2015 </span>
+                </md-card-content>
+            </md-card>
+
+            <md-card>
+                <md-card-content>
+                    <span>Recepcion: 13/06/2015 </span>
+                </md-card-content>
+            </md-card>
+        </div>
+        -->
+        <!-- Received Date Card -->
+        <md-card layout-align="end center" flex-sm="100" flex class="dd--received-date-card">
+            <div class="dd--received-date-card-header">
+                <p class="md-title">Recibido</p>
+            </div>
+            <div>
+                <h4>MAR</h4>
+                <h1>13</h1>
+                <h4>2015</h4>
+            </div>
+        </md-card>
+    </div>
+    <div layout-gt-sm="row" layout-sm="column" flex>
+        <md-card flex flex-sm="100">
+            <md-card-content>
+                <h3>Asunto</h3>
+                <p>Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Secondary line text Lorem ipsum dolor sit amet</p>
+            </md-card-content>
+        </md-card>
+    </div>
+    <div layout-gt-sm="row" layout-sm="column" flex>
+        <md-card flex flex-sm="100">
+            <md-card-content>
+                <h5 class="md-title">Empresa de Correo</h5>
+                <p>Servientrega</p>
+            </md-card-content>
+        </md-card>
+        <md-card flex flex-sm="100">
+            <md-card-content>
+                <h5 class="md-title">Guia Recibida</h5>
+                <p>Primera</p>
+            </md-card-content>
+        </md-card>
+        <md-card flex flex-sm="100">
+            <md-card-content>
+                <h5 class="md-title">Anexos</h5>
+                <p>2 Cds y una Carpeta</p>
+            </md-card-content>
+        </md-card>
+    </div>
+
+    <md-card>
+       <md-card-content>
+           <header>
+               <p class="md-title">TRD</p>
+           </header>
+       </md-card-content>
+        <md-card-content>
+            <div layout="row" flex layout-align="space-around" class="md-title">
+                <p>Oficina</p>
+                <p>Serie</p>
+                <p>Sub-Serie</p>
+                <p>Tipo Documental</p>
+            </div>
+            <md-divider></md-divider>
+        </md-card-content>
+
+        <md-card-content>
+            <div layout="row" flex layout-align="space-around">
+                <span>Direccion</span>
+                <span>S-1</span>
+                <span>SS-1</span>
+                <span>Derecho Peticion</span>
+            </div>
+            <md-divider></md-divider>
+        </md-card-content>
+
+        <md-card-content>
+            <div layout="row" flex layout-align="space-around">
+                <span>Porteria</span>
+                <span>S-2</span>
+                <span>SS-2</span>
+                <span>Tipo Documental</span>
+            </div>
+        </md-card-content>
+    </md-card>
+    <div layout-gt-sm="row" layout-sm="column" flex>
+        <md-card flex flex-sm="100">
+            <md-card-content>
+                <h5 class="md-title">Archivo de Referencia</h5>
+                <p>Archive</p>
+            </md-card-content>
+        </md-card>
+        <md-card flex flex-sm="100">
+            <md-card-content>
+                <h5 class="md-title">Clase de Documento</h5>
+                <p><em>GESTION</em></p>
+            </md-card-content>
+        </md-card>
+        <md-card flex flex-sm="100">
+            <md-card-content>
+                <h5 class="md-title">Fecha de Control</h5>
+                <p>14/12/2604</p>
+            </md-card-content>
+        </md-card>
+    </div>
+
+    <div layout="row"  flex>
+            <md-card flex>
+                <md-card-content>
+                    <p class="md-title">Revisor</p>
+                    <span>Yovanny en que Anda ?</span>
+                </md-card-content>
+            </md-card>
+
+            <md-card flex>
+                <md-card-content layout="row">
+                    <md-checkbox aria-label="Checkbox 1" class="md-primary" flex="50">
+                        Aprobado
+                    </md-checkbox>
+                    <md-checkbox  aria-label="Checkbox No Ink"  class="md-primary" flex="50">
+                        Revisado
+                    </md-checkbox>
+                </md-card-content>
+            </md-card>
+    </div>
+    <br/>
+    <br/>
+    <div ng-controller="CustomInputDemoCtrl as ctrl" layout="column">
+        <p class="md-title">Revisores</p>
+        <md-chips ng-model="ctrl.selectedVegetables" md-autocomplete-snap md-require-match>
+            <md-autocomplete
+                    md-selected-item="ctrl.selectedItem"
+                    md-search-text="ctrl.searchText"
+                    md-items="item in ctrl.querySearch(ctrl.searchText)"
+                    md-item-text="item.name"
+                    placeholder="Buscar Revisores">
+                <span md-highlight-text="ctrl.searchText">{{item.name}} :: {{item.type}}</span>
+            </md-autocomplete>
+            <md-chip-template>
+            <span>
+              <strong>{{$chip.name}}</strong>
+            </span>
+            </md-chip-template>
+        </md-chips>
+        <br />
+        <br />
+    </div>
+    <div layout="column">
+        <p class="md-title">Archivo Adjunto</p>
+        <a href="#">documento-adjunto.pdf</a>
+        <br/>
+        <md-input-container>
+            <label>Comentario</label>
+            <input>
+        </md-input-container>
+        <br/>
+        <p class="md-subhead">Radicado por:</p>
+        <em>ALEJANDRO BAEZ ARCILA</em>
+    </div>
+    <br />
+    <br />
+</md-content>

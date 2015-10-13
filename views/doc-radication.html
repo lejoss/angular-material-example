@@ -1,0 +1,152 @@
+<!-- ----- -->
+<!-- document radication  -->
+<!-- ----- -->
+<md-content class="l-page-container md-padding">
+    <div class="l-page-header">
+        <md-icon md-svg-src="../assets/images/ic_archive_48px.svg" class="s48 header-icon"></md-icon>
+        <span>&nbsp;</span>
+        <span class="md-headline">Radicar Documento</span>
+    </div>
+    <br/>
+    <div layout-padding layout="row" layout-sm="column">
+        <form ng-submit="radicationCtrl.createDocument()" name="radicado_form" flex>
+            <md-content layout="row" layout-align-md="center">
+                <md-input-container flex="50">
+                    <label>Radicado *</label>
+                    <input ng-model="radicationCtrl.radication_number" type="text">
+                </md-input-container>
+
+                <md-datepicker class="dd--datepicker-margin" flex="25" ng-model="myDate" md-placeholder="Fecha Inicial"></md-datepicker>
+                <md-datepicker class="dd--datepicker-margin" flex="25" ng-model="myDate" md-placeholder="Fecha Inicial"></md-datepicker>
+            </md-content>
+
+            <md-content layout="row">
+                <md-input-container flex="50">
+                    <label>Procedencia *</label>
+                    <input type="text">
+                </md-input-container>
+
+                <md-input-container flex="50">
+                    <label>Destino *</label>
+                    <input type="text">
+                </md-input-container>
+            </md-content>
+
+            <md-content layout="row">
+                <md-input-container flex="50">
+                    <label>Asunto *</label>
+                    <input ng-model="radicationCtrl.subject" type="text">
+                </md-input-container>
+
+                <md-input-container flex="50">
+                    <label>Observaciones *</label>
+                    <input ng-model="radicationCtrl.observations" type="text">
+                </md-input-container>
+            </md-content>
+
+            <md-content layout="row">
+                <md-input-container flex="50">
+                    <label>Documento de Referencia</label>
+                    <input type="text">
+                </md-input-container>
+
+                <md-input-container flex="50">
+                    <label>Anexos</label>
+                    <input type="text">
+                </md-input-container>
+            </md-content>
+
+            <md-content layout="row">
+                <md-input-container flex="100">
+                    <label>TRD</label>
+                    <input type="text">
+                </md-input-container>
+            </md-content>
+
+            <md-content layout="row">
+                <md-input-container flex="33">
+                    <label>Empresa de Correo Recibido</label>
+                    <input type="text">
+                </md-input-container>
+
+                <md-input-container flex="33">
+                    <label>Guia de Correo Reciba</label>
+                    <input type="text">
+                </md-input-container>
+
+                <md-select  placeholder="Empresa de Correo" ng-model="ctrl">
+                    <md-option> Opcion 1</md-option>
+                </md-select>
+            </md-content>
+
+            <!--
+            <md-content layout="row" ng-controller="DemoCtrl2 as ctrl">
+                <md-autocomplete
+                         flex="50" required
+                         md-input-name="autocompleteField"
+                         md-no-cache="ctrl.noCache"
+                         md-selected-item="ctrl.selectedItem"
+                         md-search-text="ctrl.searchText"
+                         md-items="item in ctrl.querySearch(ctrl.searchText)"
+                         md-item-text="item.display"
+                         md-floating-label="Responsable *">
+                    <md-item-template>
+                        <span md-highlight-text="ctrl.searchText">{{item.display}}</span>
+                    </md-item-template>
+                    <div ng-messages="searchForm.autocompleteField.$error" ng-if="searchForm.autocompleteField.$touched">
+                        <div ng-message="required">You <b>must</b> have a favorite state.</div>
+                        <div ng-message="minlength">Your entry is not long enough.</div>
+                        <div ng-message="maxlength">Your entry is too long.</div>
+                    </div>
+                </md-autocomplete>
+
+                <div ng-click="ctrl.addClass()" ng-class="ctrl.toggleClass ? 'class-name' : null ">
+                    <md-input-container layout-align="end end" flex="25">
+                        <label>Fecha de Control *</label>
+                        <input type="date"/>
+                    </md-input-container>
+                </div>
+
+
+                <md-select layout-align="end end" flex="25" placeholder="Clase de Documento *" ng-model="ctrl2">
+                    <md-option> INFORMACION </md-option>
+                </md-select>
+            </md-content>
+            -->
+
+            <!--
+            <md-content ng-controller="CustomInputDemoCtrl as ctrl" layout="column">
+                <md-chips ng-model="ctrl.selectedVegetables" md-autocomplete-snap md-require-match>
+                    <md-autocomplete
+                            md-selected-item="ctrl.selectedItem"
+                            md-search-text="ctrl.searchText"
+                            md-items="item in ctrl.querySearch(ctrl.searchText)"
+                            md-item-text="item.name"
+                            placeholder="Buscar Revisores">
+                        <span md-highlight-text="ctrl.searchText">{{item.name}} :: {{item.type}}</span>
+                    </md-autocomplete>
+                    <md-chip-template>
+                        <span>
+                          <strong>{{$chip.name}}</strong>
+                        </span>
+                    </md-chip-template>
+                </md-chips>
+                <br />
+                <br />
+            </md-content>
+            -->
+            <br/>
+            <br/>
+            <md-content layout="row">
+                <div flex>
+                    <h4>Subir Documento Digitalizado</h4>
+                    <br/>
+                    <input type="file">
+                    <hr/>
+                </div>
+            </md-content>
+            <br/>
+            <md-button type="submit" class="md-raised md-warn">Radicar Documento</md-button>
+        </form>
+    </div>
+</md-content>

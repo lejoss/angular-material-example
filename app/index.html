@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../assets/css/angular-material.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <title>Beesoft core</title>
+</head>
+<body class="ng-cloak" ng-app="beesoft-core" layout="row">
+  <nav class="l-nav" ng-include="'../views/sidemenu.html'"></nav>
+  <div layout="column" tabindex="-1" role="main" flex>
+    <section id="main">
+        <main>
+            <md-content class="l-content-background ng-cloak">
+                <main ui-view></main>
+            </md-content>
+        </main>
+    </section>
+  </div>
+
+  <!-- vendors -->
+  <script src="../assets/js/jquery.js"></script>
+  <script src="../assets/js/angular.js"></script>
+  <script src="../assets/js/angular-aria.js"></script>
+  <script src="../assets/js/angular-animate.js"></script>
+  <script src="../assets/js/angular-material.js"></script>
+  <script src="../assets/js/angular-ui-router.js"></script>
+  <script src="../assets/js/bootstrap.js"></script>
+  <script src="../assets/js/restangular.js"></script>
+  <script src="../assets/js/lodash.js"></script>
+
+  <!-- our js -->
+  <script src="../app/app.js"></script>
+  <script src="../app/core/core.module.js"></script>
+  <script src="../app/components/radication/radication.module.js"></script>
+  <script src="../app/components/menu/menu.module.js"></script>
+  <script src="../app/components/menu/menu.controller.js"></script>
+  <script src="../app/components/menu/menu.service.js"></script>
+  <script src="../app/components/menu/menuLink.directive.js"></script>
+  <script src="../app/components/menu/menuToggle.directive.js"></script>
+  <script src="../app/components/radication/radication.controller.js"></script>
+  <script src="../app/components/radication/demoAutocomplete.controller.js"></script>
+
+
+</body>
+</html>
